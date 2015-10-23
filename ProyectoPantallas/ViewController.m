@@ -24,4 +24,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnDiscapacidad:(id)sender {
+    //TODO: Guardar tipo de discapacidad
+
+}
+
+- (IBAction) unwindEligeDiscapacidad: (UIStoryboardSegue *) segue {
+    //Se utiliza para regresar, no se ejecuta ninguna acción
+}
+
 @end
