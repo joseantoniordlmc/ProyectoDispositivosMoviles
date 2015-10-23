@@ -54,6 +54,7 @@
 		6B4D6CFC1BC363E0000E15DE /* ProyectoPantallasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoPantallasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4D6D001BC363E0000E15DE /* ProyectoPantallasUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProyectoPantallasUITests.m; sourceTree = "<group>"; };
 		6B4D6D021BC363E0000E15DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B63A37C1BD9DB4900CE755B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9A6DCE691BD6F6C200C841FE /* ViewControllerRuta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRuta.h; sourceTree = "<group>"; };
 		9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRuta.m; sourceTree = "<group>"; };
 		9A6DCE6C1BD7020900C841FE /* discapacidad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = discapacidad.jpg; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		6B4D6CCF1BC363DF000E15DE = {
 			isa = PBXGroup;
 			children = (
+				6B63A37C1BD9DB4900CE755B /* libsqlite3.tbd */,
 				6B4D6CDA1BC363DF000E15DE /* ProyectoPantallas */,
 				6B4D6CF41BC363E0000E15DE /* ProyectoPantallasTests */,
 				6B4D6CFF1BC363E0000E15DE /* ProyectoPantallasUITests */,
