@@ -15,6 +15,11 @@
 		6B4D6CEB1BC363DF000E15DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D6CE91BC363DF000E15DE /* LaunchScreen.storyboard */; };
 		6B4D6CF61BC363E0000E15DE /* ProyectoPantallasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D6CF51BC363E0000E15DE /* ProyectoPantallasTests.m */; };
 		6B4D6D011BC363E0000E15DE /* ProyectoPantallasUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D6D001BC363E0000E15DE /* ProyectoPantallasUITests.m */; };
+		6B63A37E1BD9DB9100CE755B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B63A37C1BD9DB4900CE755B /* libsqlite3.tbd */; };
+		6B63A3811BD9DBAA00CE755B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63A3801BD9DBAA00CE755B /* DBManager.m */; settings = {ASSET_TAGS = (); }; };
+		6B63A3861BD9E04A00CE755B /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63A3851BD9E04A00CE755B /* DBViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6B63A3891BD9E43300CE755B /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63A3881BD9E43300CE755B /* AddViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6B63A38B1BD9E75100CE755B /* pruebaDB.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6B63A38A1BD9E75100CE755B /* pruebaDB.sql */; settings = {ASSET_TAGS = (); }; };
 		9A6DCE6B1BD6F6C400C841FE /* ViewControllerRuta.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */; settings = {ASSET_TAGS = (); }; };
 		9A6DCE6D1BD7020900C841FE /* discapacidad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A6DCE6C1BD7020900C841FE /* discapacidad.jpg */; settings = {ASSET_TAGS = (); }; };
 		9A6DCE6F1BD708BE00C841FE /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A6DCE6E1BD708BE00C841FE /* mapa.png */; settings = {ASSET_TAGS = (); }; };
@@ -55,6 +60,13 @@
 		6B4D6D001BC363E0000E15DE /* ProyectoPantallasUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProyectoPantallasUITests.m; sourceTree = "<group>"; };
 		6B4D6D021BC363E0000E15DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B63A37C1BD9DB4900CE755B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6B63A37F1BD9DBAA00CE755B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		6B63A3801BD9DBAA00CE755B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		6B63A3841BD9E04A00CE755B /* DBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
+		6B63A3851BD9E04A00CE755B /* DBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
+		6B63A3871BD9E43300CE755B /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		6B63A3881BD9E43300CE755B /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		6B63A38A1BD9E75100CE755B /* pruebaDB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = pruebaDB.sql; sourceTree = "<group>"; };
 		9A6DCE691BD6F6C200C841FE /* ViewControllerRuta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRuta.h; sourceTree = "<group>"; };
 		9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRuta.m; sourceTree = "<group>"; };
 		9A6DCE6C1BD7020900C841FE /* discapacidad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = discapacidad.jpg; sourceTree = "<group>"; };
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B63A37E1BD9DB9100CE755B /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,9 @@
 		6B4D6CCF1BC363DF000E15DE = {
 			isa = PBXGroup;
 			children = (
+				6B63A38A1BD9E75100CE755B /* pruebaDB.sql */,
+				6B63A37F1BD9DBAA00CE755B /* DBManager.h */,
+				6B63A3801BD9DBAA00CE755B /* DBManager.m */,
 				6B63A37C1BD9DB4900CE755B /* libsqlite3.tbd */,
 				6B4D6CDA1BC363DF000E15DE /* ProyectoPantallas */,
 				6B4D6CF41BC363E0000E15DE /* ProyectoPantallasTests */,
@@ -115,6 +131,10 @@
 				6B4D6CE11BC363DF000E15DE /* ViewController.h */,
 				6B4D6CE21BC363DF000E15DE /* ViewController.m */,
 				6B4D6CE41BC363DF000E15DE /* Main.storyboard */,
+				6B63A3871BD9E43300CE755B /* AddViewController.h */,
+				6B63A3881BD9E43300CE755B /* AddViewController.m */,
+				6B63A3841BD9E04A00CE755B /* DBViewController.h */,
+				6B63A3851BD9E04A00CE755B /* DBViewController.m */,
 				9A6DCE691BD6F6C200C841FE /* ViewControllerRuta.h */,
 				9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */,
 				6B4D6CE71BC363DF000E15DE /* Assets.xcassets */,
@@ -259,6 +279,7 @@
 				6B4D6CEB1BC363DF000E15DE /* LaunchScreen.storyboard in Resources */,
 				9A6DCE6F1BD708BE00C841FE /* mapa.png in Resources */,
 				9A6DCE6D1BD7020900C841FE /* discapacidad.jpg in Resources */,
+				6B63A38B1BD9E75100CE755B /* pruebaDB.sql in Resources */,
 				6B4D6CE81BC363DF000E15DE /* Assets.xcassets in Resources */,
 				6B4D6CE61BC363DF000E15DE /* Main.storyboard in Resources */,
 			);
@@ -288,7 +309,10 @@
 				6B4D6CE31BC363DF000E15DE /* ViewController.m in Sources */,
 				6B4D6CE01BC363DF000E15DE /* AppDelegate.m in Sources */,
 				9A6DCE6B1BD6F6C400C841FE /* ViewControllerRuta.m in Sources */,
+				6B63A3891BD9E43300CE755B /* AddViewController.m in Sources */,
 				6B4D6CDD1BC363DF000E15DE /* main.m in Sources */,
+				6B63A3861BD9E04A00CE755B /* DBViewController.m in Sources */,
+				6B63A3811BD9DBAA00CE755B /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
