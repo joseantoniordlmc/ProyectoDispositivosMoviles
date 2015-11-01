@@ -16,15 +16,24 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    UIPickerView * picker = [UIPickerView new];
-    picker.delegate = self;
-    picker.dataSource = self;
-    picker.showsSelectionIndicator = YES;
-    [self.view addSubview:picker];
+    [self addPickerDiscapacidad];
+    [self.pickerDiscapacidad removeFromSuperview];
 }
+
+/*
+ - (void)viewDidLoad {
+ [super viewDidLoad];
+ UIPickerView * picker = [UIPickerView new];
+ picker.delegate = self;
+ picker.dataSource = self;
+ picker.showsSelectionIndicator = YES;
+ [self.view addSubview:picker];
+ 
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -33,41 +42,66 @@
 
 - (IBAction)btnDiscapacidad:(id)sender {
     //TODO: Guardar tipo de discapacidad
-
+    
 }
 
 - (IBAction) unwindEligeDiscapacidad: (UIStoryboardSegue *) segue {
     //Se utiliza para regresar, no se ejecuta ninguna acción
 }
+-(void)addPickerDiscapacidad{
+    self.arregloDiscapacidad = [[NSArray alloc]initWithObjects:@"Aulas 1", @"Aulas 2", @"Aulas 3", @"Aulas 4", @"Aulas 6", @"Aulas 7", @"Biotecnología", @"Centro Estudiantil", @"FoodBox", @"Centrales", @"Carreta",@"El Estudiante", @"Learning Commons", @"Cetec", @"Cedes", @"Domo acuatico", nil];
+    self.txFieldDiscapacidad = [[UITextField alloc]initWithFrame:CGRectMake(10,100,300,30)];
+    self.txFieldDiscapacidad.delegate = self;
+    [self.view addSubview: self.txFieldDiscapacidad];
+    [self.txFieldDiscapacidad setPlaceholder:@"Elige discapacidad"];
+    self.pickerDiscapacidad = [[UIPickerView alloc]init];
+    self.pickerDiscapacidad.dataSource = self;
+    self.pickerDiscapacidad.delegate = self;
+    self.pickerDiscapacidad.showsSelectionIndicator = YES;
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Done"
+                                   style:UIBarButtonItemStyleDone
+                                   target:self
+                                   action: @selector(done)];
+    
+  //  [doneButton addTarget:self action:@selector(done)
+     
+    
+    UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:
+                          CGRectMake(0, self.view.frame.size.height-
+                                     _pickerDiscapacidad.frame.size.height-50, 320, 50)];
+    [toolBar setBarStyle:UIBarStyleBlackOpaque];
+    NSArray *toolbarItems = [NSArray arrayWithObjects:doneButton,nil];
+    [toolBar setItems:toolbarItems];
+    self.txFieldDiscapacidad.inputView = self.pickerDiscapacidad;
+    self.txFieldDiscapacidad.inputAccessoryView = toolBar;
+    
+}
 
+// Método para terminar de editar el picker
+- (void) done {
+    [self.view endEditing:YES];
+}
 
-
-
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+#pragma mark - Picker View Data source
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
 }
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return 3;
+-(NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component{
+    return [self.arregloDiscapacidad count];
 }
 
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    NSString * title = nil;
-    switch(row) {
-        case 0:
-            title = @"Silla de Ruedas";
-            break;
-        case 1:
-            title = @"Opcion 2";
-            break;
-        case 2:
-            title = @"Opcion 3";
-            break;
-    }
-    return title;
+#pragma mark- Picker View Delegate
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:
+(NSInteger)row inComponent:(NSInteger)component{
+    [self.txFieldDiscapacidad setText:[self.arregloDiscapacidad objectAtIndex:row]];
 }
-
-
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
+(NSInteger)row forComponent:(NSInteger)component{
+    return [self.arregloDiscapacidad objectAtIndex:row];
+}
 
 
 @end

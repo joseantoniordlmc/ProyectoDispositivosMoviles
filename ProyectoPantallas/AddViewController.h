@@ -17,15 +17,10 @@
 @interface AddViewController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic, strong) id<EditInfoViewControllerDelegate> delegate;
-
 @property (weak, nonatomic) IBOutlet UITextField *txtFirstname;
-
 @property (weak, nonatomic) IBOutlet UITextField *txtLastname;
-
 @property (weak, nonatomic) IBOutlet UITextField *txtAge;
-
 @property (nonatomic) int recordIDToEdit;
-
 
 - (IBAction)saveInfo:(id)sender;
 
