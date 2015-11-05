@@ -49,11 +49,11 @@
     //Se utiliza para regresar, no se ejecuta ninguna acción
 }
 -(void)addPickerDiscapacidad{
-    self.arregloDiscapacidad = [[NSArray alloc]initWithObjects:@"Aulas 1", @"Aulas 2", @"Aulas 3", @"Aulas 4", @"Aulas 6", @"Aulas 7", @"Biotecnología", @"Centro Estudiantil", @"FoodBox", @"Centrales", @"Carreta",@"El Estudiante", @"Learning Commons", @"Cetec", @"Cedes", @"Domo acuatico", nil];
-    self.txFieldDiscapacidad = [[UITextField alloc]initWithFrame:CGRectMake(10,100,300,30)];
+    self.arregloDiscapacidad = [[NSArray alloc]initWithObjects:@" ", @"Silla de Ruedas", @"Bastón", @"Muletas", @"Andador", nil];
+    //self.txFieldDiscapacidad = [[UITextField alloc]initWithFrame:CGRectMake(10,100,300,30)];
     self.txFieldDiscapacidad.delegate = self;
     [self.view addSubview: self.txFieldDiscapacidad];
-    [self.txFieldDiscapacidad setPlaceholder:@"Elige discapacidad"];
+    [self.txFieldDiscapacidad setPlaceholder:@"Elige tu discapacidad"];
     self.pickerDiscapacidad = [[UIPickerView alloc]init];
     self.pickerDiscapacidad.dataSource = self;
     self.pickerDiscapacidad.delegate = self;
@@ -70,7 +70,7 @@
     UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:
                           CGRectMake(0, self.view.frame.size.height-
                                      _pickerDiscapacidad.frame.size.height-50, 320, 50)];
-    [toolBar setBarStyle:UIBarStyleBlackOpaque];
+    [toolBar setBarStyle:UIBarStyleDefault];
     NSArray *toolbarItems = [NSArray arrayWithObjects:doneButton,nil];
     [toolBar setItems:toolbarItems];
     self.txFieldDiscapacidad.inputView = self.pickerDiscapacidad;

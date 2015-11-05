@@ -28,12 +28,12 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)addPickerLugar{
-    self.arrLugar = [[NSArray alloc]initWithObjects:@"Aulas 1", @"Aulas 2", @"Aulas 3", @"Aulas 4", @"Aulas 6", @"Aulas 7", @"Biotecnología", @"Centro Estudiantil", @"FoodBox", @"Centrales", @"Carreta",@"El Estudiante", @"Learning Commons", @"Cetec", @"Cedes", @"Domo acuatico", nil];
-    self.tfOrigen= [[UITextField alloc]initWithFrame:CGRectMake(10,100,300,30)];
+-(void)addPickerLugar {
+    self.arrLugar = [[NSArray alloc]initWithObjects:@" ", @"Aulas 1", @"Aulas 2", @"Aulas 3", @"Aulas 4", @"Aulas 6", @"Aulas 7", @"Biotecnología", @"Centro Estudiantil", @"FoodBox", @"Centrales", @"Carreta",@"El Estudiante", @"Learning Commons", @"Cetec", @"Cedes", @"Domo acuatico", nil];
+   // self.tfOrigen= [[UITextField alloc]initWithFrame:CGRectMake(10,100,300,30)];
     self.tfOrigen.delegate = self;
     [self.view addSubview: self.tfDestino];
-    [self.tfOrigen setPlaceholder:@"Elige discapacidad"];
+    [self.tfOrigen setPlaceholder:@"Elige tu localización"];
     self.pickerLugar = [[UIPickerView alloc]init];
     self.pickerLugar.dataSource = self;
     self.pickerLugar.delegate = self;
@@ -50,7 +50,7 @@
     UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:
                           CGRectMake(0, self.view.frame.size.height-
                                      _pickerLugar.frame.size.height-50, 320, 50)];
-    [toolBar setBarStyle:UIBarStyleBlackOpaque];
+    [toolBar setBarStyle:UIBarStyleDefault];
     NSArray *toolbarItems = [NSArray arrayWithObjects:doneButton,nil];
     [toolBar setItems:toolbarItems];
     self.tfOrigen.inputView = self.pickerLugar;
@@ -58,12 +58,12 @@
     
 }
 
--(void)addpickerLugar2{
-    self.arrLugar = [[NSArray alloc]initWithObjects:@"Aulas 1", @"Aulas 2", @"Aulas 3", @"Aulas 4", @"Aulas 6", @"Aulas 7", @"Biotecnología", @"Centro Estudiantil", @"FoodBox", @"Centrales", @"Carreta",@"El Estudiante", @"Learning Commons", @"Cetec", @"Cedes", @"Domo acuatico", nil];
-    self.tfDestino = [[UITextField alloc]initWithFrame:CGRectMake(10,100,300,30)];
+-(void)addpickerLugar2 {
+    self.arrLugar = [[NSArray alloc]initWithObjects:@" ", @"Aulas 1", @"Aulas 2", @"Aulas 3", @"Aulas 4", @"Aulas 6", @"Aulas 7", @"Biotecnología", @"Centro Estudiantil", @"FoodBox", @"Centrales", @"Carreta",@"El Estudiante", @"Learning Commons", @"Cetec", @"Cedes", @"Domo acuatico", nil];
+    //self.tfDestino = [[UITextField alloc]initWithFrame:CGRectMake(10,100,300,30)];
     self.tfDestino.delegate = self;
     [self.view addSubview: self.tfDestino];
-    [self.tfDestino setPlaceholder:@"Elige discapacidad"];
+    [self.tfDestino setPlaceholder:@"Elige tu destino"];
     self.pickerLugar2 = [[UIPickerView alloc]init];
     self.pickerLugar2.dataSource = self;
     self.pickerLugar2.delegate = self;
@@ -77,14 +77,14 @@
     //  [doneButton addTarget:self action:@selector(done)
     
     
-    UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:
+    UIToolbar *toolBar2 = [[UIToolbar alloc]initWithFrame:
                           CGRectMake(0, self.view.frame.size.height-
                                      _pickerLugar2.frame.size.height-50, 320, 50)];
-    [toolBar setBarStyle:UIBarStyleBlackOpaque];
+    [toolBar2 setBarStyle:UIBarStyleDefault];
     NSArray *toolbarItems = [NSArray arrayWithObjects:doneButton,nil];
-    [toolBar setItems:toolbarItems];
+    [toolBar2 setItems:toolbarItems];
     self.tfDestino.inputView = self.pickerLugar2;
-    self.tfDestino.inputAccessoryView = toolBar;
+    self.tfDestino.inputAccessoryView = toolBar2;
     
 }
 
@@ -106,15 +106,13 @@ numberOfRowsInComponent:(NSInteger)component{
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:
 (NSInteger)row inComponent:(NSInteger)component{
-    [self.tfDestino setText:[self.arrLugar objectAtIndex:row]];
+        [self.tfDestino setText:[self.arrLugar objectAtIndex:row]];
 }
+
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:
 (NSInteger)row forComponent:(NSInteger)component{
     return [self.arrLugar objectAtIndex:row];
 }
-
-
-
 
 #pragma mark- Picker View Delegate
 
@@ -123,17 +121,31 @@ numberOfRowsInComponent:(NSInteger)component{
     [self.tfOrigen setText:[self.arrLugar objectAtIndex:row]];
 }
 
+- (NSString *)pickerView2:(UIPickerView *)pickerView titleForRow:
+(NSInteger)row forComponent:(NSInteger)component{
+    return [self.arrLugar objectAtIndex:row];
+}
 
 
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+ /*   if ([[segue identifier] isEqualToString:@"mostrarRuta"]) {
+        [[segue destinationViewController] setDelegado:self];
+    }
+  */
+    
 }
-*/
 
+
+- (IBAction)btnRuta:(id)sender {
+    [self.delegado sendData:self.tfOrigen.text withDestino:self.tfDestino.text];
+    
+}
 @end
