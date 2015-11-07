@@ -32,12 +32,12 @@
 }
 
 
-/*- (NSDictionary *) funcionRegresaDiccionario: (NSString *) discapacidad withOrigen:(NSString *) origen withDestino: (NSString *) dest {
+- (NSDictionary *) funcionRegresaDiccionario: (NSString *) discapacidad withOrigen:(NSString *) origen withDestino: (NSString *) dest {
     
     
     
     
-}*/
+}
 
 
 /*
