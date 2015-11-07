@@ -31,6 +31,15 @@
     self.tfDestino.text = destino;
 }
 
+
+/*- (NSDictionary *) funcionRegresaDiccionario: (NSString *) discapacidad withOrigen:(NSString *) origen withDestino: (NSString *) dest {
+    
+    
+    
+    
+}*/
+
+
 /*
 #pragma mark - Navigation
 

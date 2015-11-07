@@ -10,7 +10,6 @@
 #import "ViewControllerShowRutas.h"
 
 @interface ViewControllerRuta ()
-
 @end
 
 @implementation ViewControllerRuta

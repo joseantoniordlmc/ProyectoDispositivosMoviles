@@ -17,4 +17,6 @@
 @property (strong,nonatomic) NSString *destOrigen;
 @property(strong,nonatomic) NSString *destDestino;
 
+- (NSDictionary *) funcionRegresaDiccionario: (NSString *) discapacidad withOrigen:(NSString *) origen withDestino: (NSString *) dest;
+
 @end

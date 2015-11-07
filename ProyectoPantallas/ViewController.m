@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "ViewControllerRuta.h"
 
 @interface ViewController ()
 
 //@property (nonatomic,strong) NSArray *arrayOpciones;
+
 
 @end
 
@@ -102,6 +104,24 @@ numberOfRowsInComponent:(NSInteger)component{
 (NSInteger)row forComponent:(NSInteger)component{
     return [self.arregloDiscapacidad objectAtIndex:row];
 }
+
+
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"ruta"]) {
+        
+        ViewControllerRuta *viewRutas = [segue destinationViewController];
+        
+        viewRutas.discapacidad = self.txFieldDiscapacidad.text;
+    }
+}
+
 
 
 @end
