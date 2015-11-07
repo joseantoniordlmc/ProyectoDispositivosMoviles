@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tfDestino.text = self.destDestino;
+    self.tfOrigen.text = self.destOrigen;
     // Do any additional setup after loading the view.
 }
 

@@ -147,7 +147,6 @@
                                 <animations/>
                                 <state key="normal" title="Obtener Ruta"/>
                                 <connections>
-                                    <action selector="btnRuta:" destination="hIW-LM-p93" eventType="touchUpInside" id="4Oz-hr-mjQ"/>
                                     <segue destination="8DJ-Oh-5mW" kind="show" identifier="mostrarRuta" id="dTk-Y5-5p5"/>
                                 </connections>
                             </button>
@@ -178,7 +177,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4X2-Yd-zdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="IgB-da-bt4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="527" y="152"/>
+            <point key="canvasLocation" x="524" y="151"/>
         </scene>
         <!--View Controller Show Rutas-->
         <scene sceneID="HVJ-FK-wkA">
@@ -197,28 +196,56 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xRG-NA-Pxv">
-                                        <rect key="frame" x="0.0" y="28" width="329" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="24" id="xRG-NA-Pxv">
+                                        <rect key="frame" x="0.0" y="28" width="329" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xRG-NA-Pxv" id="S1e-is-FOu">
-                                            <rect key="frame" x="0.0" y="0.0" width="329" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="23"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JLa-FH-mZ3">
-                                        <rect key="frame" x="0.0" y="72" width="329" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="JLa-FH-mZ3">
+                                        <rect key="frame" x="0.0" y="52" width="329" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JLa-FH-mZ3" id="e9i-u4-8tK">
-                                            <rect key="frame" x="0.0" y="0.0" width="329" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="123"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8L4-w7-MCC">
+                                                    <rect key="frame" x="133" y="16" width="162" height="30"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUH-h9-hb5">
+                                                    <rect key="frame" x="133" y="63" width="162" height="30"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distancia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nH-hK-WBo">
+                                                    <rect key="frame" x="39" y="67" width="77" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ruta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbz-T4-WGT">
+                                                    <rect key="frame" x="39" y="25" width="78" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="T2h-Wl-Pem">
-                                        <rect key="frame" x="0.0" y="116" width="329" height="44"/>
+                                        <rect key="frame" x="0.0" y="176" width="329" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T2h-Wl-Pem" id="y5l-mg-2NS">
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="43"/>

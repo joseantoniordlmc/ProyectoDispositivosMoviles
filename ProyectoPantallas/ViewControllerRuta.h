@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol ProtocoloMuestraDatos <NSObject>
-
-- (void) sendData: (NSString *) origen withDestino: (NSString *) destino;
-
-@end
 
 @interface ViewControllerRuta : UIViewController < UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -23,8 +18,8 @@
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerLugar;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerLugar2;
 @property (strong, nonatomic) NSArray *arrLugar;
-
-@property (nonatomic, strong) id <ProtocoloMuestraDatos> delegado;
+@property (strong,nonatomic) NSString *origen;
+@property(strong,nonatomic) NSString *destino;
 
 
 @end

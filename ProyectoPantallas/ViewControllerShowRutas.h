@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewControllerRuta.h"
 
 
-@interface ViewControllerShowRutas : UIViewController <ProtocoloMuestraDatos>
+@interface ViewControllerShowRutas : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *tfOrigen;
 @property (weak, nonatomic) IBOutlet UITextField *tfDestino;
+
+@property (strong,nonatomic) NSString *destOrigen;
+@property(strong,nonatomic) NSString *destDestino;
 
 @end
