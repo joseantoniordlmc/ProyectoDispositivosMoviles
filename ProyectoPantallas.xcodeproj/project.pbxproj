@@ -20,7 +20,8 @@
 		6B63A3861BD9E04A00CE755B /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63A3851BD9E04A00CE755B /* DBViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6B63A3891BD9E43300CE755B /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63A3881BD9E43300CE755B /* AddViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6B63A38B1BD9E75100CE755B /* pruebaDB.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6B63A38A1BD9E75100CE755B /* pruebaDB.sql */; settings = {ASSET_TAGS = (); }; };
-		9A63A0111BEAD7D7008312D8 /* ViewControllerShowRutas.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A63A0101BEAD7D7008312D8 /* ViewControllerShowRutas.m */; settings = {ASSET_TAGS = (); }; };
+		9A4E190A1BEECD2500501795 /* Celda.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E19091BEECD2500501795 /* Celda.m */; settings = {ASSET_TAGS = (); }; };
+		9A4E190D1BEECD7700501795 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E190C1BEECD7700501795 /* TableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9A6DCE6B1BD6F6C400C841FE /* ViewControllerRuta.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */; settings = {ASSET_TAGS = (); }; };
 		9A6DCE6D1BD7020900C841FE /* discapacidad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A6DCE6C1BD7020900C841FE /* discapacidad.jpg */; settings = {ASSET_TAGS = (); }; };
 		9A6DCE6F1BD708BE00C841FE /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A6DCE6E1BD708BE00C841FE /* mapa.png */; settings = {ASSET_TAGS = (); }; };
@@ -68,8 +69,10 @@
 		6B63A3871BD9E43300CE755B /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		6B63A3881BD9E43300CE755B /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		6B63A38A1BD9E75100CE755B /* pruebaDB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = pruebaDB.sql; sourceTree = "<group>"; };
-		9A63A00F1BEAD7D7008312D8 /* ViewControllerShowRutas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerShowRutas.h; sourceTree = "<group>"; };
-		9A63A0101BEAD7D7008312D8 /* ViewControllerShowRutas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerShowRutas.m; sourceTree = "<group>"; };
+		9A4E19081BEECD2500501795 /* Celda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Celda.h; sourceTree = "<group>"; };
+		9A4E19091BEECD2500501795 /* Celda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Celda.m; sourceTree = "<group>"; };
+		9A4E190B1BEECD7700501795 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		9A4E190C1BEECD7700501795 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		9A6DCE691BD6F6C200C841FE /* ViewControllerRuta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRuta.h; sourceTree = "<group>"; };
 		9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRuta.m; sourceTree = "<group>"; };
 		9A6DCE6C1BD7020900C841FE /* discapacidad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = discapacidad.jpg; sourceTree = "<group>"; };
@@ -134,8 +137,10 @@
 				6B4D6CE11BC363DF000E15DE /* ViewController.h */,
 				6B4D6CE21BC363DF000E15DE /* ViewController.m */,
 				6B4D6CE41BC363DF000E15DE /* Main.storyboard */,
-				9A63A00F1BEAD7D7008312D8 /* ViewControllerShowRutas.h */,
-				9A63A0101BEAD7D7008312D8 /* ViewControllerShowRutas.m */,
+				9A4E190B1BEECD7700501795 /* TableViewController.h */,
+				9A4E190C1BEECD7700501795 /* TableViewController.m */,
+				9A4E19081BEECD2500501795 /* Celda.h */,
+				9A4E19091BEECD2500501795 /* Celda.m */,
 				6B63A3871BD9E43300CE755B /* AddViewController.h */,
 				6B63A3881BD9E43300CE755B /* AddViewController.m */,
 				6B63A3841BD9E04A00CE755B /* DBViewController.h */,
@@ -314,7 +319,8 @@
 				6B4D6CE31BC363DF000E15DE /* ViewController.m in Sources */,
 				6B4D6CE01BC363DF000E15DE /* AppDelegate.m in Sources */,
 				9A6DCE6B1BD6F6C400C841FE /* ViewControllerRuta.m in Sources */,
-				9A63A0111BEAD7D7008312D8 /* ViewControllerShowRutas.m in Sources */,
+				9A4E190D1BEECD7700501795 /* TableViewController.m in Sources */,
+				9A4E190A1BEECD2500501795 /* Celda.m in Sources */,
 				6B63A3891BD9E43300CE755B /* AddViewController.m in Sources */,
 				6B4D6CDD1BC363DF000E15DE /* main.m in Sources */,
 				6B63A3861BD9E04A00CE755B /* DBViewController.m in Sources */,

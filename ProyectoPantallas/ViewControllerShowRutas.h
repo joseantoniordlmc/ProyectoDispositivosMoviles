@@ -11,12 +11,9 @@
 
 @interface ViewControllerShowRutas : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *tfOrigen;
-@property (weak, nonatomic) IBOutlet UITextField *tfDestino;
-
 @property (strong,nonatomic) NSString *destOrigen;
 @property(strong,nonatomic) NSString *destDestino;
+@property(strong,nonatomic)NSString * destDiscapacidad;
 
-- (NSDictionary *) funcionRegresaDiccionario: (NSString *) discapacidad withOrigen:(NSString *) origen withDestino: (NSString *) dest;
-
+- (NSDictionary *) funcionRegresaDiccionario;
 @end

@@ -32,12 +32,7 @@
 }
 
 
-- (NSDictionary *) funcionRegresaDiccionario: (NSString *) discapacidad withOrigen:(NSString *) origen withDestino: (NSString *) dest {
-    
-    
-    
-    
-}
+
 
 
 /*

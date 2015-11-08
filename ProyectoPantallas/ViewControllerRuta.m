@@ -7,7 +7,7 @@
 //
 
 #import "ViewControllerRuta.h"
-#import "ViewControllerShowRutas.h"
+#import "TableViewController.h"
 
 @interface ViewControllerRuta ()
 @end
@@ -135,12 +135,13 @@ numberOfRowsInComponent:(NSInteger)component{
     
    if ([[segue identifier] isEqualToString:@"mostrarRuta"]) {
        
-       ViewControllerShowRutas *viewRutas = [segue destinationViewController];
+       TableViewController *viewRutas = [segue destinationViewController];
        
        self.origen = self.tfOrigen.text;
        self.destino = self.tfDestino.text;
        viewRutas.destOrigen = self.origen;
        viewRutas.destDestino = self.destino;
+       viewRutas.destDiscapacidad = self.discapacidad;
    }
 }
 
