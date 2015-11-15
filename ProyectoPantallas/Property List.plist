@@ -2,18 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>item2</key>
+	<key>Aulas 1</key>
 	<dict>
-		<key>Origen</key>
-		<string></string>
-		<key>Destino</key>
-		<string></string>
-		<key>Ruta</key>
-		<array>
-			<string></string>
-		</array>
+		<key>Aulas 2</key>
+		<dict>
+			<key>Ruta</key>
+			<array>
+				<string>Camina en linea recta 100 metros, vas a pasar enfrente de rectoria y carreta sigue asi :)</string>
+			</array>
+		</dict>
+		<key>Aulas 3</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
+		<key>Aulas 4</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
+		<key>Biotecnologia</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
+		<key>Aulas 6</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
+		<key>Aulas 7</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
+		<key>Centro Estudiantil</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
+		<key>Borrego</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
+		<key>Centrales</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
+		<key>learning commons</key>
+		<dict>
+			<key>Ruta</key>
+			<array/>
+		</dict>
 	</dict>
-	<key>item3</key>
-	<dict/>
 </dict>
 </plist>
