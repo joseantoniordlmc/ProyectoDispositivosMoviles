@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05FE6FEA17C53736BFB987F7E5666D94 /* PESGraphNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3BEAB4916CA1B2F08F92DAB1981D29 /* PESGraphNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CCA948C40E4F480F376316B6C005135 /* PESGraphRouteStep.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C10936F8147DA1DA3FD1F7FF27E2BE /* PESGraphRouteStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13AEE2BF5A5990DBFC2C678B98FF3126 /* PESGraphRouteStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 294BE5B3FFB6D54A65762FC1BC3C5A97 /* PESGraphRouteStep.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2C8BE6CA58E587939BF72632C61759BC /* PESGraph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 961A9BB538C8AB9F48DA15CB7526C73D /* PESGraph-dummy.m */; };
+		417C11985C4FF2BC7DDB4FD48B552CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		557C80CEC135FF90413506D8FF232153 /* PESGraphRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE7BE48A0D11D510B61294B91C222E /* PESGraphRoute.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5648443FE56F761F573EE1E71642A6A0 /* PESGraphRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F0EDF21BA46C76B53D1313048F025B /* PESGraphRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		661E4E4637CD1455E4832F2913B12A57 /* PESGraphEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 76875373004C60E307E80E45ADE6B14C /* PESGraphEdge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		76988AA57E94286C3F1B2D99A849FFFA /* PESGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EEF5B615CA8C616CB18B924F5C2E7C0 /* PESGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1CEA2DC3033E594C8A27961487DF552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C16B0A8D0C8975111195B39CABA8AF87 /* Pods-ProyectoPantallas-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C0F832E8B3877A4904607F79B79F87 /* Pods-ProyectoPantallas-dummy.m */; };
+		C73DEBD2CC51145642855BE2F27F4C04 /* PESGraphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5790B307F9386BA60587C081D80F0506 /* PESGraphNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D2A4A30AD946D89FE8EE4624EA61F505 /* PESGraphEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = 668BBD2A63C93CD00D5146FA4DA44829 /* PESGraphEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F79F39C91690B55D64F96756F132705F /* PESGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C9019EA618BB2F03BB5A07A4D659E /* PESGraph.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F16174506B1B0ED7034DF9DEB5B64CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A718BD4C79501B85CC42438A401B261B;
+			remoteInfo = PESGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04D3D1613ECCA155B9BFF652DFF82EF1 /* Pods-ProyectoPantallas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProyectoPantallas.release.xcconfig"; sourceTree = "<group>"; };
+		0EEF5B615CA8C616CB18B924F5C2E7C0 /* PESGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PESGraph.h; path = PESGraph/PESGraph.h; sourceTree = "<group>"; };
+		294BE5B3FFB6D54A65762FC1BC3C5A97 /* PESGraphRouteStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PESGraphRouteStep.m; path = PESGraph/PESGraphRouteStep.m; sourceTree = "<group>"; };
+		2A8A84B21432D781E63E10CD5D4336B6 /* PESGraph.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PESGraph.xcconfig; sourceTree = "<group>"; };
+		2D40317F100E7628A777D1036771ABAE /* libPESGraph.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPESGraph.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37DB774B00EC0330618D6704967AA17C /* Pods-ProyectoPantallas-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProyectoPantallas-frameworks.sh"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5790B307F9386BA60587C081D80F0506 /* PESGraphNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PESGraphNode.m; path = PESGraph/PESGraphNode.m; sourceTree = "<group>"; };
+		668BBD2A63C93CD00D5146FA4DA44829 /* PESGraphEdge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PESGraphEdge.h; path = PESGraph/PESGraphEdge.h; sourceTree = "<group>"; };
+		76875373004C60E307E80E45ADE6B14C /* PESGraphEdge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PESGraphEdge.m; path = PESGraph/PESGraphEdge.m; sourceTree = "<group>"; };
+		7BAB309B6761AA3DBEC2048C2B14C440 /* Pods-ProyectoPantallas-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProyectoPantallas-acknowledgements.plist"; sourceTree = "<group>"; };
+		8EFDC4FCC95BDEFFCBCA51C79DDC66A8 /* PESGraph-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PESGraph-prefix.pch"; sourceTree = "<group>"; };
+		92F0EDF21BA46C76B53D1313048F025B /* PESGraphRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PESGraphRoute.h; path = PESGraph/PESGraphRoute.h; sourceTree = "<group>"; };
+		961A9BB538C8AB9F48DA15CB7526C73D /* PESGraph-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PESGraph-dummy.m"; sourceTree = "<group>"; };
+		A3C10936F8147DA1DA3FD1F7FF27E2BE /* PESGraphRouteStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PESGraphRouteStep.h; path = PESGraph/PESGraphRouteStep.h; sourceTree = "<group>"; };
+		A5C0F832E8B3877A4904607F79B79F87 /* Pods-ProyectoPantallas-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProyectoPantallas-dummy.m"; sourceTree = "<group>"; };
+		BA5FB65CD789052E988CB58FD2D1E68D /* Pods-ProyectoPantallas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProyectoPantallas.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CBCD13F014B507245DC4D55B420B5FFA /* Pods-ProyectoPantallas-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProyectoPantallas-resources.sh"; sourceTree = "<group>"; };
+		D8EE7BE48A0D11D510B61294B91C222E /* PESGraphRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PESGraphRoute.m; path = PESGraph/PESGraphRoute.m; sourceTree = "<group>"; };
+		DE3BEAB4916CA1B2F08F92DAB1981D29 /* PESGraphNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PESGraphNode.h; path = PESGraph/PESGraphNode.h; sourceTree = "<group>"; };
+		ECE35F50FBE8DAFC45DEA55D588C7D0A /* Pods-ProyectoPantallas-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProyectoPantallas-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F68C9019EA618BB2F03BB5A07A4D659E /* PESGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PESGraph.m; path = PESGraph/PESGraph.m; sourceTree = "<group>"; };
+		F97B8A58E5AE2C6727C294AD90718F50 /* libPods-ProyectoPantallas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProyectoPantallas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45AEF1A187D0B0D11524EA4868A98A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417C11985C4FF2BC7DDB4FD48B552CF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D904E11A1307DD047482CF45322AD847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CEA2DC3033E594C8A27961487DF552 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2C75E338070B275406F6503CA1105A /* Pods-ProyectoPantallas */ = {
+			isa = PBXGroup;
+			children = (
+				ECE35F50FBE8DAFC45DEA55D588C7D0A /* Pods-ProyectoPantallas-acknowledgements.markdown */,
+				7BAB309B6761AA3DBEC2048C2B14C440 /* Pods-ProyectoPantallas-acknowledgements.plist */,
+				A5C0F832E8B3877A4904607F79B79F87 /* Pods-ProyectoPantallas-dummy.m */,
+				37DB774B00EC0330618D6704967AA17C /* Pods-ProyectoPantallas-frameworks.sh */,
+				CBCD13F014B507245DC4D55B420B5FFA /* Pods-ProyectoPantallas-resources.sh */,
+				BA5FB65CD789052E988CB58FD2D1E68D /* Pods-ProyectoPantallas.debug.xcconfig */,
+				04D3D1613ECCA155B9BFF652DFF82EF1 /* Pods-ProyectoPantallas.release.xcconfig */,
+			);
+			name = "Pods-ProyectoPantallas";
+			path = "Target Support Files/Pods-ProyectoPantallas";
+			sourceTree = "<group>";
+		};
+		2F99849BBCC35673CA52E9C7FDCF34E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A8A84B21432D781E63E10CD5D4336B6 /* PESGraph.xcconfig */,
+				961A9BB538C8AB9F48DA15CB7526C73D /* PESGraph-dummy.m */,
+				8EFDC4FCC95BDEFFCBCA51C79DDC66A8 /* PESGraph-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PESGraph";
+			sourceTree = "<group>";
+		};
+		5E686F34E111597F3C98327A6EB9FEF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1D96B035313143C6BDAC777E6D49B90 /* PESGraph */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F21207844D7B79A3AC30BDCB8CB3D8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D40317F100E7628A777D1036771ABAE /* libPESGraph.a */,
+				F97B8A58E5AE2C6727C294AD90718F50 /* libPods-ProyectoPantallas.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5E686F34E111597F3C98327A6EB9FEF7 /* Pods */,
+				5F21207844D7B79A3AC30BDCB8CB3D8B /* Products */,
+				EF6D59E4472018CCEEF3FFE0C6BBFC86 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E1D96B035313143C6BDAC777E6D49B90 /* PESGraph */ = {
+			isa = PBXGroup;
+			children = (
+				0EEF5B615CA8C616CB18B924F5C2E7C0 /* PESGraph.h */,
+				F68C9019EA618BB2F03BB5A07A4D659E /* PESGraph.m */,
+				668BBD2A63C93CD00D5146FA4DA44829 /* PESGraphEdge.h */,
+				76875373004C60E307E80E45ADE6B14C /* PESGraphEdge.m */,
+				DE3BEAB4916CA1B2F08F92DAB1981D29 /* PESGraphNode.h */,
+				5790B307F9386BA60587C081D80F0506 /* PESGraphNode.m */,
+				92F0EDF21BA46C76B53D1313048F025B /* PESGraphRoute.h */,
+				D8EE7BE48A0D11D510B61294B91C222E /* PESGraphRoute.m */,
+				A3C10936F8147DA1DA3FD1F7FF27E2BE /* PESGraphRouteStep.h */,
+				294BE5B3FFB6D54A65762FC1BC3C5A97 /* PESGraphRouteStep.m */,
+				2F99849BBCC35673CA52E9C7FDCF34E1 /* Support Files */,
+			);
+			path = PESGraph;
+			sourceTree = "<group>";
+		};
+		EF6D59E4472018CCEEF3FFE0C6BBFC86 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F2C75E338070B275406F6503CA1105A /* Pods-ProyectoPantallas */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D8456DB41287A45B82207BAEF1B192D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76988AA57E94286C3F1B2D99A849FFFA /* PESGraph.h in Headers */,
+				D2A4A30AD946D89FE8EE4624EA61F505 /* PESGraphEdge.h in Headers */,
+				05FE6FEA17C53736BFB987F7E5666D94 /* PESGraphNode.h in Headers */,
+				5648443FE56F761F573EE1E71642A6A0 /* PESGraphRoute.h in Headers */,
+				0CCA948C40E4F480F376316B6C005135 /* PESGraphRouteStep.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		426B967006F95BD995FE9029E2B11598 /* Pods-ProyectoPantallas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51324371506BC6E4890683A7ED96CB42 /* Build configuration list for PBXNativeTarget "Pods-ProyectoPantallas" */;
+			buildPhases = (
+				73466A6467613976CA415B2F950D4EEF /* Sources */,
+				D904E11A1307DD047482CF45322AD847 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEB68CAC330E4805280FB4010AD5F7AC /* PBXTargetDependency */,
+			);
+			name = "Pods-ProyectoPantallas";
+			productName = "Pods-ProyectoPantallas";
+			productReference = F97B8A58E5AE2C6727C294AD90718F50 /* libPods-ProyectoPantallas.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A718BD4C79501B85CC42438A401B261B /* PESGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B10E93527477623A157FB2AFA978AE1 /* Build configuration list for PBXNativeTarget "PESGraph" */;
+			buildPhases = (
+				281EA70F01940C0B1DC08E40143B9AE6 /* Sources */,
+				45AEF1A187D0B0D11524EA4868A98A58 /* Frameworks */,
+				8D8456DB41287A45B82207BAEF1B192D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PESGraph;
+			productName = PESGraph;
+			productReference = 2D40317F100E7628A777D1036771ABAE /* libPESGraph.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5F21207844D7B79A3AC30BDCB8CB3D8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A718BD4C79501B85CC42438A401B261B /* PESGraph */,
+				426B967006F95BD995FE9029E2B11598 /* Pods-ProyectoPantallas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		281EA70F01940C0B1DC08E40143B9AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8BE6CA58E587939BF72632C61759BC /* PESGraph-dummy.m in Sources */,
+				F79F39C91690B55D64F96756F132705F /* PESGraph.m in Sources */,
+				661E4E4637CD1455E4832F2913B12A57 /* PESGraphEdge.m in Sources */,
+				C73DEBD2CC51145642855BE2F27F4C04 /* PESGraphNode.m in Sources */,
+				557C80CEC135FF90413506D8FF232153 /* PESGraphRoute.m in Sources */,
+				13AEE2BF5A5990DBFC2C678B98FF3126 /* PESGraphRouteStep.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73466A6467613976CA415B2F950D4EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16B0A8D0C8975111195B39CABA8AF87 /* Pods-ProyectoPantallas-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEB68CAC330E4805280FB4010AD5F7AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PESGraph;
+			target = A718BD4C79501B85CC42438A401B261B /* PESGraph */;
+			targetProxy = 9F16174506B1B0ED7034DF9DEB5B64CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EDD21158EF0AFE222E3D8E7F2BACC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8A84B21432D781E63E10CD5D4336B6 /* PESGraph.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PESGraph/PESGraph-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1BAAFCAE2336473EC5C711669C063925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5FB65CD789052E988CB58FD2D1E68D /* Pods-ProyectoPantallas.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		59E7276CCF76D700E5640E0D291872EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04D3D1613ECCA155B9BFF652DFF82EF1 /* Pods-ProyectoPantallas.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FF5EFD25C2202AA55D3320B3A878747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8A84B21432D781E63E10CD5D4336B6 /* PESGraph.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PESGraph/PESGraph-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B10E93527477623A157FB2AFA978AE1 /* Build configuration list for PBXNativeTarget "PESGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF5EFD25C2202AA55D3320B3A878747 /* Debug */,
+				0EDD21158EF0AFE222E3D8E7F2BACC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51324371506BC6E4890683A7ED96CB42 /* Build configuration list for PBXNativeTarget "Pods-ProyectoPantallas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BAAFCAE2336473EC5C711669C063925 /* Debug */,
+				59E7276CCF76D700E5640E0D291872EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

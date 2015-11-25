@@ -17,7 +17,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *tfDestino;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerLugar;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerLugar2;
-@property (strong, nonatomic) NSArray *arrLugar;
+@property (strong, nonatomic) NSMutableArray *arrLugar;
 @property (strong,nonatomic) NSString *origen;
 @property(strong,nonatomic) NSString *destino;
 @property(nonatomic,strong) NSString *discapacidad;

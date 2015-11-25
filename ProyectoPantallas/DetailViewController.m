@@ -34,8 +34,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Indicaciones";
     // Do any additional setup after loading the view, typically from a nib.
-            self.labDetail.text = [self.detailItem objectAtIndex:0];
+    
     [self configureView];
 }
 
@@ -43,4 +44,33 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Segues
+
+
+
+#pragma mark - Table View
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.detailItem count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // importante
+    
+    UITableViewCell *cellRuta = [tableView dequeueReusableCellWithIdentifier:@"CellRuta" forIndexPath:indexPath];
+    
+    NSString *paso = self.detailItem[indexPath.row];
+    cellRuta.textLabel.numberOfLines = 0;
+    cellRuta.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    cellRuta.textLabel.text = paso;
+    
+    return cellRuta;
+}
+
+
 @end

@@ -15,14 +15,13 @@
 		6B4D6CEB1BC363DF000E15DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D6CE91BC363DF000E15DE /* LaunchScreen.storyboard */; };
 		6B4D6CF61BC363E0000E15DE /* ProyectoPantallasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D6CF51BC363E0000E15DE /* ProyectoPantallasTests.m */; };
 		6B4D6D011BC363E0000E15DE /* ProyectoPantallasUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D6D001BC363E0000E15DE /* ProyectoPantallasUITests.m */; };
-		6B63A37E1BD9DB9100CE755B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B63A37C1BD9DB4900CE755B /* libsqlite3.tbd */; };
-		6B63A3811BD9DBAA00CE755B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63A3801BD9DBAA00CE755B /* DBManager.m */; };
-		6B63A3861BD9E04A00CE755B /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63A3851BD9E04A00CE755B /* DBViewController.m */; };
-		6B63A3891BD9E43300CE755B /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63A3881BD9E43300CE755B /* AddViewController.m */; };
-		6B63A38B1BD9E75100CE755B /* pruebaDB.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6B63A38A1BD9E75100CE755B /* pruebaDB.sql */; };
+		6BB1B5251C02ED01006CC36A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB1B5241C02ED01006CC36A /* Foundation.framework */; };
+		6BB1B5271C02ED0E006CC36A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB1B5261C02ED0E006CC36A /* UIKit.framework */; };
+		6BB1B5291C02ED24006CC36A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB1B5281C02ED24006CC36A /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		6BB1B52F1C03911D006CC36A /* PESGraph.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6BB1B52E1C03911D006CC36A /* PESGraph.podspec */; };
+		76DD42B3B7135BBA75E0FD0F /* libPods-ProyectoPantallas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8934876E61966AE43F0DE1E5 /* libPods-ProyectoPantallas.a */; };
 		9A4E190A1BEECD2500501795 /* Celda.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E19091BEECD2500501795 /* Celda.m */; };
 		9A4E190D1BEECD7700501795 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E190C1BEECD7700501795 /* TableViewController.m */; };
-		9A4E190F1BEEDE6C00501795 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E190E1BEEDE6C00501795 /* Property List.plist */; };
 		9A5196CB1BF7FEFD0090369B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5196CA1BF7FEFD0090369B /* DetailViewController.m */; };
 		9A6DCE6B1BD6F6C400C841FE /* ViewControllerRuta.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */; };
 		9A6DCE6D1BD7020900C841FE /* discapacidad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A6DCE6C1BD7020900C841FE /* discapacidad.jpg */; };
@@ -63,25 +62,24 @@
 		6B4D6CFC1BC363E0000E15DE /* ProyectoPantallasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoPantallasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4D6D001BC363E0000E15DE /* ProyectoPantallasUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProyectoPantallasUITests.m; sourceTree = "<group>"; };
 		6B4D6D021BC363E0000E15DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B63A37C1BD9DB4900CE755B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		6B63A37F1BD9DBAA00CE755B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
-		6B63A3801BD9DBAA00CE755B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
-		6B63A3841BD9E04A00CE755B /* DBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
-		6B63A3851BD9E04A00CE755B /* DBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
-		6B63A3871BD9E43300CE755B /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
-		6B63A3881BD9E43300CE755B /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
-		6B63A38A1BD9E75100CE755B /* pruebaDB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = pruebaDB.sql; sourceTree = "<group>"; };
+		6BB1B5241C02ED01006CC36A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6BB1B5261C02ED0E006CC36A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6BB1B5281C02ED24006CC36A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6BB1B52A1C02EE0F006CC36A /* ProyectoPantallas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProyectoPantallas-Prefix.pch"; sourceTree = "<group>"; };
+		6BB1B52E1C03911D006CC36A /* PESGraph.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PESGraph.podspec; sourceTree = "<group>"; };
+		8934876E61966AE43F0DE1E5 /* libPods-ProyectoPantallas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProyectoPantallas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4E19081BEECD2500501795 /* Celda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Celda.h; sourceTree = "<group>"; };
 		9A4E19091BEECD2500501795 /* Celda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Celda.m; sourceTree = "<group>"; };
 		9A4E190B1BEECD7700501795 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		9A4E190C1BEECD7700501795 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		9A4E190E1BEEDE6C00501795 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		9A5196C91BF7FEFC0090369B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		9A5196CA1BF7FEFD0090369B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9A6DCE691BD6F6C200C841FE /* ViewControllerRuta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRuta.h; sourceTree = "<group>"; };
 		9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRuta.m; sourceTree = "<group>"; };
 		9A6DCE6C1BD7020900C841FE /* discapacidad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = discapacidad.jpg; sourceTree = "<group>"; };
 		9A6DCE6E1BD708BE00C841FE /* mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa.png; sourceTree = "<group>"; };
+		9E42B9916BD4DFC0551BC507 /* Pods-ProyectoPantallas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoPantallas.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoPantallas/Pods-ProyectoPantallas.release.xcconfig"; sourceTree = "<group>"; };
+		F72FF9F8FFE86450CF648B5C /* Pods-ProyectoPantallas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoPantallas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoPantallas/Pods-ProyectoPantallas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B63A37E1BD9DB9100CE755B /* libsqlite3.tbd in Frameworks */,
+				6BB1B5291C02ED24006CC36A /* CoreGraphics.framework in Frameworks */,
+				6BB1B5271C02ED0E006CC36A /* UIKit.framework in Frameworks */,
+				6BB1B5251C02ED01006CC36A /* Foundation.framework in Frameworks */,
+				76DD42B3B7135BBA75E0FD0F /* libPods-ProyectoPantallas.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,17 +111,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0884E25CBD44C803B7236A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8934876E61966AE43F0DE1E5 /* libPods-ProyectoPantallas.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6403C9D12C170BF8D2B8DDD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F72FF9F8FFE86450CF648B5C /* Pods-ProyectoPantallas.debug.xcconfig */,
+				9E42B9916BD4DFC0551BC507 /* Pods-ProyectoPantallas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B4D6CCF1BC363DF000E15DE = {
 			isa = PBXGroup;
 			children = (
-				6B63A38A1BD9E75100CE755B /* pruebaDB.sql */,
-				6B63A37F1BD9DBAA00CE755B /* DBManager.h */,
-				6B63A3801BD9DBAA00CE755B /* DBManager.m */,
-				6B63A37C1BD9DB4900CE755B /* libsqlite3.tbd */,
+				6BB1B52E1C03911D006CC36A /* PESGraph.podspec */,
+				6BB1B5281C02ED24006CC36A /* CoreGraphics.framework */,
+				6BB1B5261C02ED0E006CC36A /* UIKit.framework */,
+				6BB1B5241C02ED01006CC36A /* Foundation.framework */,
 				6B4D6CDA1BC363DF000E15DE /* ProyectoPantallas */,
 				6B4D6CF41BC363E0000E15DE /* ProyectoPantallasTests */,
 				6B4D6CFF1BC363E0000E15DE /* ProyectoPantallasUITests */,
 				6B4D6CD91BC363DF000E15DE /* Products */,
+				6403C9D12C170BF8D2B8DDD9 /* Pods */,
+				2B0884E25CBD44C803B7236A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,15 +164,10 @@
 				6B4D6CE41BC363DF000E15DE /* Main.storyboard */,
 				9A5196C91BF7FEFC0090369B /* DetailViewController.h */,
 				9A5196CA1BF7FEFD0090369B /* DetailViewController.m */,
-				9A4E190E1BEEDE6C00501795 /* Property List.plist */,
 				9A4E190B1BEECD7700501795 /* TableViewController.h */,
 				9A4E190C1BEECD7700501795 /* TableViewController.m */,
 				9A4E19081BEECD2500501795 /* Celda.h */,
 				9A4E19091BEECD2500501795 /* Celda.m */,
-				6B63A3871BD9E43300CE755B /* AddViewController.h */,
-				6B63A3881BD9E43300CE755B /* AddViewController.m */,
-				6B63A3841BD9E04A00CE755B /* DBViewController.h */,
-				6B63A3851BD9E04A00CE755B /* DBViewController.m */,
 				9A6DCE691BD6F6C200C841FE /* ViewControllerRuta.h */,
 				9A6DCE6A1BD6F6C300C841FE /* ViewControllerRuta.m */,
 				6B4D6CE71BC363DF000E15DE /* Assets.xcassets */,
@@ -168,6 +183,7 @@
 		6B4D6CDB1BC363DF000E15DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6BB1B52A1C02EE0F006CC36A /* ProyectoPantallas-Prefix.pch */,
 				6B4D6CDC1BC363DF000E15DE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -198,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B4D6D051BC363E0000E15DE /* Build configuration list for PBXNativeTarget "ProyectoPantallas" */;
 			buildPhases = (
+				6101BE41F4435A50C84A7D27 /* Check Pods Manifest.lock */,
 				6B4D6CD41BC363DF000E15DE /* Sources */,
 				6B4D6CD51BC363DF000E15DE /* Frameworks */,
 				6B4D6CD61BC363DF000E15DE /* Resources */,
+				926AFA397C5E1B2708C4A7B3 /* Embed Pods Frameworks */,
+				9E43D77451149F025F8CC275 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +277,7 @@
 				TargetAttributes = {
 					6B4D6CD71BC363DF000E15DE = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 348MU4AQ73;
 					};
 					6B4D6CF01BC363E0000E15DE = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -295,10 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B4D6CEB1BC363DF000E15DE /* LaunchScreen.storyboard in Resources */,
-				9A4E190F1BEEDE6C00501795 /* Property List.plist in Resources */,
 				9A6DCE6F1BD708BE00C841FE /* mapa.png in Resources */,
 				9A6DCE6D1BD7020900C841FE /* discapacidad.jpg in Resources */,
-				6B63A38B1BD9E75100CE755B /* pruebaDB.sql in Resources */,
+				6BB1B52F1C03911D006CC36A /* PESGraph.podspec in Resources */,
 				6B4D6CE81BC363DF000E15DE /* Assets.xcassets in Resources */,
 				6B4D6CE61BC363DF000E15DE /* Main.storyboard in Resources */,
 			);
@@ -320,6 +339,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6101BE41F4435A50C84A7D27 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		926AFA397C5E1B2708C4A7B3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoPantallas/Pods-ProyectoPantallas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E43D77451149F025F8CC275 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoPantallas/Pods-ProyectoPantallas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B4D6CD41BC363DF000E15DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -331,10 +398,7 @@
 				9A4E190D1BEECD7700501795 /* TableViewController.m in Sources */,
 				9A4E190A1BEECD2500501795 /* Celda.m in Sources */,
 				9A5196CB1BF7FEFD0090369B /* DetailViewController.m in Sources */,
-				6B63A3891BD9E43300CE755B /* AddViewController.m in Sources */,
 				6B4D6CDD1BC363DF000E15DE /* main.m in Sources */,
-				6B63A3861BD9E04A00CE755B /* DBViewController.m in Sources */,
-				6B63A3811BD9DBAA00CE755B /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,23 +535,31 @@
 		};
 		6B4D6D061BC363E0000E15DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F72FF9F8FFE86450CF648B5C /* Pods-ProyectoPantallas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProyectoPantallas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JARMC.ProyectoPantallas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		6B4D6D071BC363E0000E15DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E42B9916BD4DFC0551BC507 /* Pods-ProyectoPantallas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProyectoPantallas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JARMC.ProyectoPantallas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

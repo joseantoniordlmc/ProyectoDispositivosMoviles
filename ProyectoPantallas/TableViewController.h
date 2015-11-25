@@ -14,6 +14,6 @@
 @property(strong,nonatomic) NSString *destDestino;
 @property(strong,nonatomic) NSString * destDiscapacidad;
 
-- (NSDictionary *) funcionRegresaDiccionario: (NSString *) discap withOrigen: (NSString *) origen withDestino: (NSString *) destino;
+
 
 @end

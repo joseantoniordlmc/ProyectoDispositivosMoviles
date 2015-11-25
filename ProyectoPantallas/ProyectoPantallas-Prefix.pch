@@ -1,0 +1,23 @@
+//
+//  ProyectoPantallas-Prefix.pch
+//  ProyectoPantallas
+//
+//  Created by José Antonio Ruiz del Moral Cervantes on 11/23/15.
+//  Copyright © 2015 José Antonio Ruiz del Moral Cervantes. All rights reserved.
+//
+
+#ifndef ProyectoPantallas_Prefix_pch
+#define ProyectoPantallas_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ProyectoPantallas_Prefix_pch */
+
+//
+// Prefix header for all source files of the 'PESGraph' target in the 'PESGraph' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#endif

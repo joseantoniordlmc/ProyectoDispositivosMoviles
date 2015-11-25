@@ -50,6 +50,8 @@
 - (IBAction) unwindEligeDiscapacidad: (UIStoryboardSegue *) segue {
     //Se utiliza para regresar, no se ejecuta ninguna acción
 }
+
+
 -(void)addPickerDiscapacidad{
     self.arregloDiscapacidad = [[NSArray alloc]initWithObjects:@" ", @"Silla de Ruedas", @"Bastón", @"Muletas", @"Andador", nil];
     //self.txFieldDiscapacidad = [[UITextField alloc]initWithFrame:CGRectMake(10,100,300,30)];
@@ -114,7 +116,22 @@ numberOfRowsInComponent:(NSInteger)component{
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    if ([[segue identifier] isEqualToString:@"ruta"]) {
+    if(self.txFieldDiscapacidad.text == nil){
+        
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Aviso"
+                                                                       message:@"Debes elegir una de las opciones."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+        
+    } else
+    
+    if ([[segue identifier] isEqualToString:@"ruta"] && self.txFieldDiscapacidad.text != nil) {
         
         ViewControllerRuta *viewRutas = [segue destinationViewController];
         
