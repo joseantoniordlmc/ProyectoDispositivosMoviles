@@ -132,6 +132,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//Función para utilziar el Picker Wheel y obtener el dato que se selecciono. Origen
 -(void)addPickerLugar {
     
     self.tfOrigen.delegate = self;
@@ -150,8 +151,6 @@
                                    target:self
                                    action: @selector(done)];
     
-    //  [doneButton addTarget:self action:@selector(done)
-    
     
     UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:
                           CGRectMake(0, self.view.frame.size.height-
@@ -164,6 +163,7 @@
     
 }
 
+//Función para utilziar el Picker Wheel y obtener el dato que se selecciono. Destino
 -(void)addpickerLugar2 {
     
     
@@ -207,9 +207,11 @@
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
 }
+
+
 -(NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component{
-    
+    //Crea el tamaño del picker con el tamaño del diccionario de nodos.
     NSArray *allKeys = [self.nodosDic allKeys];
     
     return [allKeys count];
@@ -219,7 +221,7 @@ numberOfRowsInComponent:(NSInteger)component{
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:
 (NSInteger)row inComponent:(NSInteger)component{
-    
+    //Asigna el valor seleccionado del picker Wheel y lo guarda en su variable para su uso posterior.
     if (pickerView == self.pickerLugar){
         [self.tfOrigen setText:[[self.nodosDic objectForKey:[NSString stringWithFormat:@"%ld",(long)row]] title]];
         self.origen = [NSString stringWithFormat:@"%ld",(long)row];
@@ -243,13 +245,15 @@ numberOfRowsInComponent:(NSInteger)component{
     // Get the new view controller using [segue destinationViewController]
     // Pass the selected object to the new view controller.
     
+    
+    //Regresar a Menu Inicial
     if ([[segue identifier] isEqualToString:@"menu"]) {
         
         
         
     } else
     
-    
+    //Validación de que no se encuntre vacío el Origen o el Destino.
     if(self.origen == nil || self.destino == nil){
         
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Aviso"
@@ -265,6 +269,7 @@ numberOfRowsInComponent:(NSInteger)component{
         
     } else 
     
+        //Mandar valores obtenidos a siguiente vista para generar ruta, siempre y cuando no esten vacíos estos campos.
    if ([[segue identifier] isEqualToString:@"mostrarRuta"] && self.origen != nil && self.destino != nil ) {
        
        UINavigationController *navi = [segue destinationViewController];
@@ -277,7 +282,7 @@ numberOfRowsInComponent:(NSInteger)component{
        //Manda Valores a la siguiente vista
        viewRutas.destOrigen = self.origen;
        viewRutas.destDestino = self.destino;
-       viewRutas.destDiscapacidad = self.discapacidad;
+       
    }
     
    

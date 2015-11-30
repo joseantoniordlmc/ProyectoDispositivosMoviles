@@ -20,7 +20,7 @@
 @property (strong, nonatomic) NSMutableArray *arrLugar;
 @property (strong,nonatomic) NSString *origen;
 @property(strong,nonatomic) NSString *destino;
-@property(nonatomic,strong) NSString *discapacidad;
+
 
 
 @end

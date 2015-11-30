@@ -19,12 +19,22 @@
 
 @interface TableViewController ()
 
+//Diccionario que contiene nuestros nodos.
 @property NSMutableDictionary *nodosDic;
+
+//Se declara el objeto PESGraph, que contendra a la información de los nodos.
 @property PESGraph *graph;
+
+//Se declara el objeto PESGraphEdge, que contendra la informacion de los vertices.
 @property PESGraphEdge *edge;
+
+//Se declara el objeto PESGraphRoute, que contendra la información de la ruta, en base a los nodos y vertices.
 @property PESGraphRoute *route;
-@property NSDictionary *objects;
+
 @property NSMutableArray *ruta;
+
+
+//Se declaran nuestros nodos.
 @property PESGraphNode *unoNode;
 @property PESGraphNode *dosNode;
 @property PESGraphNode *tresNode;
@@ -70,7 +80,10 @@
     self.title = @"Ruta";
     // Do any additional setup after loading the view, typically from a nib.
     
+    //Se inicializa el objeto PESGraph que es el que contendra a todos nuestros nodos y vertices.
     self.graph = [[PESGraph alloc] init];
+    
+    //Se inicializan nuestros nodos.
     self.unoNode = [PESGraphNode nodeWithIdentifier:@"1" nodeWithTitle:@"Entrada Rectoría"];
     self.dosNode = [PESGraphNode nodeWithIdentifier:@"2" nodeWithTitle:@"Entrada Lago Patos"];
     self.tresNode = [PESGraphNode nodeWithIdentifier:@"3" nodeWithTitle:@"Entrada CIAP"];
@@ -102,6 +115,7 @@
     self.veintinueveNode = [PESGraphNode nodeWithIdentifier:@"29" nodeWithTitle:@"Jubileo"];
     self.treintaNode = [PESGraphNode nodeWithIdentifier:@"30"  nodeWithTitle:@"CIAP"];
     
+    //Inicializamos nuestro Diccionario de Nodos con los nodos creados previamente.
     self.nodosDic = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                      self.unoNode,@"1"
                      ,self.dosNode,@"2"
@@ -134,6 +148,11 @@
                      ,self.veintinueveNode,@"29"
                      ,self.treintaNode,@"30"
                      ,nil];
+    
+    
+    
+    //Aqui se declaran los vertices que conectan a nuestros nodos -> revisar Anexo de Excel con información de los vertices.
+    
     
     //Entrada Rectoría:
     [self.graph addBiDirectionalEdge:[PESGraphEdge edgeWithName:@"1 <-> 9" andWeight:[NSNumber numberWithInt:100] andIndicacion:[NSString stringWithFormat:@"En cada extremo de la fachada de rectoría se enceuntran rampas de acceso."]] fromNode:self.unoNode toNode:self.nueveNode];
@@ -365,16 +384,19 @@
     // a CIAP
     [self.graph addBiDirectionalEdge:[PESGraphEdge edgeWithName:@"27 <-> 30" andWeight:[NSNumber numberWithInt:90] andIndicacion:[NSString stringWithFormat:@"La rampa para CIAP esta directo, en el extremo este, la rampa del atli esta sobre el pasillo que te lleva directamente hacía CIAP."]] fromNode:self.veintisieteNode toNode:self.treintaNode];
     
-    NSLog(@"%@",self.destOrigen);
+    //Se terminan de declarar los vertices, conexiones entre nodos.
     
+    //Se obtiene el nodo de origen
     PESGraphNode *origenNodo = [self.nodosDic objectForKey:self.destOrigen];
     
+    //Se obtiene el nodo de destino
     PESGraphNode *destinoNodo = [self.nodosDic objectForKey:self.destDestino];
     
-    NSLog(@"%@",origenNodo.title);
-    NSLog(@"%@",destinoNodo.title);
+    //NSLog(@"%@",origenNodo.title);
+    //NSLog(@"%@",destinoNodo.title);
     
-    //self.route = [self.graph shortestRouteFromNode:self.cincoNode toNode:self.nueveNode];
+    
+    //Función para obtener la ruta, desde nodo Origen al nodo Destino
     self.route = [self.graph shortestRouteFromNode:origenNodo toNode:destinoNodo];
 
 
@@ -391,17 +413,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"detail"]) {
-        
-       // NSDictionary  *dic = [self.nodosDic objectForKey:[NSString stringWithFormat:@"%ld",(long)self.destOrigen]];
-      // NSDictionary *dest = [self.nodosDic objectForKey:[NSString stringWithFormat:@"%ld",(long)self.destDestino]];
-       // _ruta = [dest objectForKey:@"Ruta"];
-        
+       
+        //Se crea el arreglo que contendra la ruta, obteniendo los pasos de la ruta generada por la función anterior.
         NSMutableArray *arrPath = [[NSMutableArray alloc] init];
     
-        
+            //Se agrega el origen.
             [arrPath addObject:[NSString stringWithFormat:@"Origen: %@",[self.route startingNode].title]];
         
         
+         //Se agrega la indicación y el Edificio de Conexión
          for (PESGraphRouteStep *aStep in self.route.steps){
              
              
@@ -413,13 +433,12 @@
         
         }
         
-        
+        //Se agrega el Destino
         [arrPath addObject:[NSString stringWithFormat:@"Destino: %@", [self.route endingNode].title]];
         
-        //arrPath = [NSMutableArray arrayWithObjects:@"Después de Entrar Incorporate a al pasillo DAF Cruzando esta el Gimnasio",@"Carreta a Gimansio toma la salida hacia A2, Incorporate al Pasillo DAF y coninua todo derecho",@"Sigue por el lado izquerdo de Rectoria entre Aulas 1 y continua derecho por ese pasillo." , nil];
+            //se manda el arreglo con la ruta para poder desplegarlo
             [[segue destinationViewController] setDetailItem:arrPath];
-        
-            //[[segue destinationViewController] setDelegado:self];
+    
         
         
         
@@ -441,34 +460,25 @@
     // importante
     
     Celda *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
     
+    //Despliega el Origen de la Ruta
     [cell.txRuta setText:[self.route startingNode].title];
+    
+    //despleiga el Total en mts. de la ruta calculada.
     [cell.txDistancia setText:[NSString stringWithFormat:@"%4g mts",[self.route length]]];
     
-    NSLog(@"%lu",(unsigned long)[self.route count]);
-    NSLog(@"%@",[self.route startingNode].title);
-    NSLog(@"%@", [self.route endingNode].title);
-    NSLog(@"%f",[self.route length]);
-    NSString *stepsPath = [NSString stringWithString:[self.route description]];
-    NSLog(@"%@",stepsPath);
+    //NSLog(@"%lu",(unsigned long)[self.route count]);
+    //NSLog(@"%@",[self.route startingNode].title);
+    //NSLog(@"%@", [self.route endingNode].title);
+    //NSLog(@"%f",[self.route length]);
+    //NSString *stepsPath = [NSString stringWithString:[self.route description]];
+    //NSLog(@"%@",stepsPath);
     
     
     return cell;
 }
 
 
--(void)inicializaNodos{
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
 
 
 @end

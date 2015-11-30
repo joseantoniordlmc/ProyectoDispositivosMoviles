@@ -10,8 +10,7 @@
 
 @interface DetailViewController : UIViewController
 
+//Arreglo que contiene la Ruta a presentar
 @property (strong, nonatomic) NSMutableArray* detailItem;
-
-@property (weak, nonatomic) IBOutlet UILabel *labDetail;
 
 @end

@@ -59,20 +59,26 @@
     return [self.detailItem count];
 }
 
+
+//Genera la celdas en base al arreglo recibido, para mostrar la ruta solicitada.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    // importante
-    
-    UIView* separatorLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 1)];/// change size as you need.
-    separatorLineView.backgroundColor = [UIColor grayColor];// you can also put image here
     
     
+    //Separador entre celdas
+    UIView* separatorLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 1)];
+    separatorLineView.backgroundColor = [UIColor grayColor];//
+    
+    
+    //celda a Modificar
     UITableViewCell *cellRuta = [tableView dequeueReusableCellWithIdentifier:@"CellRuta" forIndexPath:indexPath];
     
+    //Asigna texto a las celdas, con formato.
     NSString *paso = self.detailItem[indexPath.row];
     cellRuta.textLabel.numberOfLines = 0;
     cellRuta.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cellRuta.textLabel.text = paso;
     [cellRuta.contentView addSubview:separatorLineView];
+    
     
     return cellRuta;
 }

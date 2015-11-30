@@ -12,8 +12,5 @@
 
 @property (strong,nonatomic) NSString *destOrigen;
 @property(strong,nonatomic) NSString *destDestino;
-@property(strong,nonatomic) NSString * destDiscapacidad;
-
-
 
 @end
