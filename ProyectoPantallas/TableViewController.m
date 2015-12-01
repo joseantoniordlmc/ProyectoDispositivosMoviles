@@ -114,6 +114,7 @@
     self.veintiochoNode = [PESGraphNode nodeWithIdentifier:@"28" nodeWithTitle:@"Gimnasio"];
     self.veintinueveNode = [PESGraphNode nodeWithIdentifier:@"29" nodeWithTitle:@"Jubileo"];
     self.treintaNode = [PESGraphNode nodeWithIdentifier:@"30"  nodeWithTitle:@"CIAP"];
+
     
     //Inicializamos nuestro Diccionario de Nodos con los nodos creados previamente.
     self.nodosDic = [NSMutableDictionary dictionaryWithObjectsAndKeys:

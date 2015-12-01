@@ -214,7 +214,7 @@ numberOfRowsInComponent:(NSInteger)component{
     //Crea el tamaño del picker con el tamaño del diccionario de nodos.
     NSArray *allKeys = [self.nodosDic allKeys];
     
-    return [allKeys count];
+    return [allKeys count]+1;
 }
 
 #pragma mark- Picker View Delegate
